@@ -84,6 +84,7 @@ type DrainSpec struct {
 	DisableEviction          bool                  `json:"disableEviction,omitempty"`
 	SkipWaitForDeleteTimeout int                   `json:"skipWaitForDeleteTimeout,omitempty"`
 	PodSelector              *metav1.LabelSelector `json:"podSelector,omitempty"`
+	PodSelector              *string               `json:"podSelector,omitempty"`
 }
 
 // SecretSpec describes a secret to be mounted for prepare/upgrade containers.
